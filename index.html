@@ -18,6 +18,18 @@
     <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="http://www.htmleaf.com/templets/default/css/default-min.css" />
+    <script type="text/javascript">
+$('.carousel').carousel({
+    interval: 3000
+});
+$("#style-switcher h2 span").on("click touchstart", function(e) {
+    $("#style-switcher").css("display", "none");
+});
+$("#related-close").on("click touchstart", function(e) {
+    $('.related').remove();
+});
+</script>
+
 </head>
 
 <body>
@@ -325,16 +337,5 @@
 <script src="assets/js/gsdk-bootstrapswitch.js"></script>
 <script src="assets/js/get-shit-done.js"></script>
 <script src="assets/js/custom.js"></script>
-<script type="text/javascript">
-$('.carousel').carousel({
-    interval: 3000
-});
-$("#style-switcher h2 span").on("click touchstart", function(e) {
-    $("#style-switcher").css("display", "none");
-});
-$("#related-close").on("click touchstart", function(e) {
-    $('.related').remove();
-});
-</script>
 
 </html>
